@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="oss.csc415.musicnotes.MusicNotesActivity">
+
+    <oss.csc415.musicnotes.MusicNotesUI
+        android:id="@+id/musicNotesUI"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:filterTouchesWhenObscured="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/scaleContainer"
+        android:layout_width="750dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/screen_background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/musicNotesUI" />
+
+</android.support.constraint.ConstraintLayout>
